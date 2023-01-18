@@ -1,0 +1,33 @@
+DOCUMENTATION
+
+The default prompt is hi(hi would always be printed)
+
+Options Handled:
+cd : Has no options
+echo : -n, --help(Confirmed with prof by mail)
+pwd : -L works the same as normal pwd and -P uses symbolic links(which was not possible to handle)
+ls : -a, -i
+cat: -n, -e
+rm: -v, -i
+mkdir: -v
+
+If an invalid command is entered, "Enter a valid command" message appears
+File not found error has been handled in cat
+If an option is entered which is not handled, "Invalid option" message is thrown
+
+test cases:
+echo hello TA
+ehhohoko
+echo -n hello TA
+echo hello
+pwd
+pwd -L
+ls
+ls -a
+ls -i
+ls &t
+ls -a &t
+ls -i &t
+mkdir a
+mkdir -v b
+
